@@ -29,7 +29,8 @@
 		                                             display:block; 
 		                                          }
 		                                          table, td {
-		                                             border-collapse:collapse; 
+		                                             border-collapse:collapse;
+                                                      border-spacing: 0;
 		                                          }
 		                                         /* Hotmail */
 		                                          .ReadMsgBody {
@@ -71,8 +72,6 @@
 		                                             .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td {
 		                                                 line-height: 100%;
 		                                             } 
-                                                    table {
-	                                               border-collapse:separate;
 		                                           /* OSX and iOS */
 		                                               body{
 		                                                   -webkit-text-size-adjust:100%;
@@ -96,7 +95,7 @@
                                                       float: none !important;
                                                       width: 100% !important;
                                                   }
-                                                                                    .removeElement {
+                                                  .removeElement {
                                                       display: none !important;
                                                   }
                                                   /* Wrapper is the other half half of the heart. When the media query kicks in, it stretches its element across the screen. It also adds a consistent and smaller amount of padding to all elements for mobile viewing. */
@@ -115,11 +114,20 @@
                                     .fallback-text {
                                         font-family: Arial, sans-serif;
                                     }
+                                            /* Fonts */
+                                            /* latin-ext */
+                                            @font-face {
+                                              font-family: 'PT Sans';
+                                              font-style: normal;
+                                              font-weight: 400;
+                                              src: local('PT Sans'), local('PTSans-Regular'), url(https://fonts.gstatic.com/s/ptsans/v11/jizaRExUiTo99u79D0yExdGM.woff2) format('woff2');
+                                              unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+                                            }
                                 </style>
                                 <![endif]-->
 	</head>
-	<body style="padding:0; margin:0">
-		<table border="0" cellpadding="0" cellspacing="0" id="bodyTable" style="margin:0; padding:0;" width="100%">
+	<body style="padding:0; margin:0 border: 0 none;">
+		<table border="0" cellpadding="0" cellspacing="0" id="bodyTable" style="margin:0; padding:0; border: 0 none;" width="100%">
 			<tr>
 				<td align="center" class="wrapper" valign="top">
 					<table style="margin:auto; border:0 none; max-width: 845px;">
@@ -133,7 +141,7 @@
 							<td style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;" width="50">
 								<img height="1" src="https://spacergif.org/spacer.gif" width="50">
 							</td>
-							<td align="center" class="wrapper" style="background-color:#FAFAFA; font-family: 'Myriad Pro lite', MyriadPro, 'Myriad Pro', Helvetica, Arial, sans-serif; font-size: 22px; font-weight:300; table-layout: fixed;" valign="top" width="745">
+							<td align="center" class="wrapper" style="background-color:#FAFAFA; font-family: MyriadProLite, 'Myriad Pro', Helvetica, Arial, sans-serif; font-size: 22px;" valign="top" width="745">
 								<h1>
 									Headline 1
 								</h1>
@@ -147,31 +155,31 @@
 							<td style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;" width="50">
 								<img height="1" src="https://spacergif.org/spacer.gif" width="50">
 							</td>
-							<td class="column" style="background-color:#FAFAFA;" width="745">
-								<table>
+							<td class="column" style="background-color:#FAFAFA; height:100%;" width="745">
+								<table cellpadding="0" style="border:0 none;">
 									<tr>
-										<td>
-                                            <table>
+										<td style="max-width:360px;" style="border:0 none;" style="border:0 none; margin: 0; padding: 0 none; padding-left: 70px; vertical-align: ;">
+                                            <table width="270" style="margin: 0px; height: 100%; border:0 none;">
                                                 <tr>
-                                                    <td style="font-family: 'Myriad Pro lite', MyriadPro, 'Myriad Pro', Helvetica, Arial, sans-serif; font-size: 22px; font-weight:300; table-layout: fixed;">Cats Are Great</td>
+                                                    <td style="font-family: 'Myriad Pro lite', MyriadPro, 'Myriad Pro', Helvetica, Arial, sans-serif; font-size: 22px;vertical-align: middle; padding:0 none;">Cats Are Great</td>
                                                 </tr>
                                                 <tr>
-                                                    <td style="font-family:‘Lucida Sans’, ‘Lucida Grande’, Verdana, sans-serif; font-size: 14px;vertical-align: top;">Going to catch the red dot today going to catch the red dot today where is my slave? I'm getting hungry find box a little too small and curl up with fur</td>
+                                                    <td width="270" style="font-family:‘Lucida Sans’, ‘Lucida Grande’, Verdana, sans-serif; font-size: 14px;vertical-align: middle; padding:0 none;">Going to catch the red dot today going to catch the red dot today where is my slave? I'm getting hungry find box a little too small and curl up with fur</td>
                                                 </tr>
                                             </table>
 										</td>
-										<td>
-											<img><!-- Cat Face on Desktop -->
+										<td style=".removeElement; max-width:360px; height: 100%;  padding:0 none;">
+											<img width="310" style="display:block; padding:0 none; border 0 none;" src="https://i.imgur.com/9jCzQiJ.png">
+										</td>
+									</tr>
+                                    <tr class=".removeElement">
+										<td colspan="2" style="border:0 none;">
+											<img width="720" style="display:block;"  src="https://i.imgur.com/7xogGww.png">
 										</td>
 									</tr>
 									<tr>
-										<td colspan="2">
-											<img><!-- Cat Body on Desktop -->
-										</td>
-									</tr>
-									<tr>
-										<td colspan="2">
-											<img><!-- Cat on Mobile -->
+										<td colspan="2" style="width:100%; height: auto; display:none;">
+											<img style="display:block;" src="https://i.imgur.com/G8xSl62.png">
 										</td>
 									</tr>
 								</table>
@@ -186,12 +194,12 @@
 								<img height="1" src="https://spacergif.org/spacer.gif" width="50">
 							</td>
 							<td style="background-color:#FAFAFA;" width="745">
-								<table>
+								<table border="0" cellpadding="0" cellspacing="0" width="100%">
 									<tr>
-										<td width="745" style="max-width: 347px; height: 100%; padding:0; max-height: 689px; max-width: 322px; margin:25px; text-align: center;">
-                                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+										<td style="max-width: 347px; height: 100%; padding:0; max-height: 689px; max-width: 322px; text-align: center;">
+                                            <table style="margin:25px;" border="0" cellpadding="0" cellspacing="0" width="100%">
                                                 <tr>
-                                                    <td style="font-family: 'Myriad Pro lite', MyriadPro, 'Myriad Pro', Helvetica, Arial, sans-serif; font-size: 22px; font-weight:300; table-layout: fixed;">Feature One
+                                                    <td style="font-family: 'Myriad Pro lite', MyriadPro, 'Myriad Pro', Helvetica, Arial, sans-serif; font-size: 22px; font-weight:300;">Feature One
                                                     </td>
 												</tr>
 												<tr>
@@ -202,8 +210,8 @@
                                                 </tr>
                                             </table>
                                         </td>
-										<td width="347" height="100%" style="height: 100%; padding:0; max-height: 689px; max-width: 322px;" class="column">
-                                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+										<td style="max-width: 347px; height: 100%; padding:0; max-height: 689px; max-width: 322px; text-align: center;">
+                                            <table style="margin:25px;" border="0" cellpadding="0" cellspacing="0" width="100%">
                                                 <tr>
                                                     <td style="font-family: 'Myriad Pro lite', MyriadPro, 'Myriad Pro', Helvetica, Arial, sans-serif; font-size: 22px; font-weight:300; vertical-align: top;">Feature Two
                                                     </td>
@@ -276,14 +284,9 @@
                                                     </td>
 												</tr>
 											</table>
-										</td><!-- 
-                
-                Subhead 3 Or i show my fluffy belly but it's a trap! if you pet it i will tear up your hand. Sit and stare the fat cat sat on the mat
-                
-                Subhead 4 Bat away with paws. Destroy couch chase imaginary bugs, run around the house at 4 in the morning peer out window, chatter at birds, lure them to mouth for munch, munch -->
+										</td>
 									</tr>
                                     <tr>
-										<!--Duplicate this when finished -->
 										<td>
 											<table>
 												<tr>
@@ -318,7 +321,7 @@
 												            </tr>
 												            <tr>
                                                                 <td style="font-family:‘Lucida Sans’, ‘Lucida Grande’, Verdana, sans-serif; font-size:14px;" colspan="2">
-														      Subhead 4 Bat away with paws. Destroy couch chase imaginary bugs, run around the house at 4 in the morning peer out window, chatter at birds, lure them to mouth for munch, munch
+														      Bat away with paws. Destroy couch chase imaginary bugs, run around the house at 4 in the morning peer out window, chatter at birds, lure them to mouth for munch, munch
                                                                 </td>
                                                             </tr>
                                                         </table>
@@ -332,16 +335,21 @@
 						</tr>
                         <!-- Cat Collection CTA -->
 						<tr>
-							<td colspan="3" width="100%">
-								<table>
+							<td colspan="3" width="100%" style="text-align: center; padding-left:20px; padding-right:20px;">
+								<table width="100%" style="border-bottom: 1px solid #d6d6d6; border-top: 1px solid #d6d6d6;">
 									<tr>
-										<td>
-											<img><!--Cute Cat Face -->
+										<td style="padding-top:30px;">
+											<img width="200" height="130" style="margin:auto;" src="https://i.imgur.com/QCjQF40.png">
 										</td>
 									</tr>
 									<tr>
-										<td style="font-family:‘Lucida Sans’, ‘Lucida Grande’, Verdana, sans-serif;"> 
-											Check out a list of our must-have cat apps.<br>&nbsp;<br><a>View the Cat collection &gt;</a> <a>View the SPECIAL MOBILE ONLY Cat collection &gt;</a>
+										<td style="font-family:‘Lucida Sans’, ‘Lucida Grande’, Verdana, sans-serif; width:100%; padding-bottom: 50px;"> 
+											Check out a list of our must-have cat apps.<br>&nbsp;<br><a>View the Cat collection &gt;</a>
+										</td>
+									</tr>
+                                    <tr>
+										<td style="font-family:‘Lucida Sans’, ‘Lucida Grande’, Verdana, sans-serif; width:100%; padding-bottom: 50px;"> 
+											Check out a list of our<br> must-have cat apps.<br>&nbsp;<br><a>View the SPECIAL MOBILE ONLY Cat collection &gt;</a>
 										</td>
 									</tr>
 								</table>
@@ -349,22 +357,25 @@
 						</tr>
                         <!-- Headline 3 -->
 						<tr>
-							<td width="100%">
-								<table style="margin-left:30px; margin-right:30px; text-align: center; vertical-align: top">
+							<td width="100%" style="margin-left:30px; margin-right:30px; text-align:center;">
+								<table style="text-align: center; vertical-align: top; width: 100%;">
 									<tr>
 										<td style="font-family: 'Myriad Pro lite', MyriadPro, 'Myriad Pro', Helvetica, Arial, sans-serif; font-size: 22px; font-weight:300;" colspan="3">
 											<font>Headline 3</font>
 										</td>
 									</tr>
 									<tr>
-										<td style="font-family:‘Lucida Sans’, ‘Lucida Grande’, Verdana, sans-serif; width:200px; margin: 30px; vertical-align: top"> 
-                                            <img style="display:block;"> <h2 style="font-family: 'Myriad Pro lite', MyriadPro, 'Myriad Pro', Helvetica, Arial, sans-serif; font-size: 22px; font-weight:300; table-layout: fixed;">Title 1</h2><br>Chomp, chomp but caticus cuteicus yet mice. Litter kitter kitty litty little kitten big roar roar feed me chirp at birds but show belly<br>&nbsp;<br><a>View the guide &gt;</a><br>&nbsp;<br><a>Download in iCat &gt;</a>
+										<td style="font-family:‘Lucida Sans’, ‘Lucida Grande’, Verdana, sans-serif; width:200px; margin: 30px; vertical-align: top">
+                                            <img width="58" height="60" src="https://i.imgur.com/yMlfXUh.png" style="display:inline-block;">
+                                            <h2 style="font-family: 'Myriad Pro lite', MyriadPro, 'Myriad Pro', Helvetica, Arial, sans-serif; font-size: 22px; font-weight:300; table-layout: fixed;">Title 1</h2><br>Chomp, chomp but caticus cuteicus yet mice. Litter kitter kitty litty little kitten big roar roar feed me chirp at birds but show belly<br>&nbsp;<br><a>View the guide &gt;</a><br>&nbsp;<br><a>Download in iCat &gt;</a>
 										</td>
                                         <td style="font-family:‘Lucida Sans’, ‘Lucida Grande’, Verdana, sans-serif; width:200px; margin: 30px; vertical-align: top"> 
-                                            <img style="display:block;"> <h2 style="font-family: 'Myriad Pro lite', MyriadPro, 'Myriad Pro', Helvetica, Arial, sans-serif; font-size: 22px; font-weight:300; table-layout: fixed;">Title 2</h2><br>Or i'm bored inside, let me out i'm lonely outside, let me in i can't make up my mind whether to go.<br>&nbsp;<br><a>Find more info &gt;</a>
+                                            <img width="58" height="60" src="https://i.imgur.com/yMlfXUh.png" style="display:inline-block;">
+                                            <h2 style="font-family: 'Myriad Pro lite', MyriadPro, 'Myriad Pro', Helvetica, Arial, sans-serif; font-size: 22px; font-weight:300; table-layout: fixed;">Title 2</h2><br>Or i'm bored inside, let me out i'm lonely outside, let me in i can't make up my mind whether to go.<br>&nbsp;<br><a>Find more info &gt;</a>
 										</td>
-                                        <td style="font-family:‘Lucida Sans’, ‘Lucida Grande’, Verdana, sans-serif; width:200px; margin: 30px; vertical-align: top"> 
-                                            <img style="display:block;"> <h2 style="font-family: 'Myriad Pro lite', MyriadPro, 'Myriad Pro', Helvetica, Arial, sans-serif; font-size: 22px; font-weight:300; table-layout: fixed;">Title 3</h2><br>You nudge me with your foot?!?! leap into the air in greatest offense! Or follow us on Twitter <a>@CatSupport</a><br>&nbsp;<br><a>View the guide &gt;</a>
+                                        <td style="font-family:‘Lucida Sans’, ‘Lucida Grande’, Verdana, sans-serif; width:200px; margin: 30px; vertical-align: top">  
+                                            <img width="58" height="60" src="https://i.imgur.com/yMlfXUh.png" style="display:inline-block;">
+                                            <h2 style="font-family: 'Myriad Pro lite', MyriadPro, 'Myriad Pro', Helvetica, Arial, sans-serif; font-size: 22px; font-weight:300; table-layout: fixed;">Title 3</h2><br>You nudge me with your foot?!?! leap into the air in greatest offense! Or follow us on Twitter <a>@CatSupport</a><br>&nbsp;<br><a>View the guide &gt;</a>
 										</td>
 									</tr>
 								</table>
