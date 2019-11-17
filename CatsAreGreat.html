@@ -7,85 +7,110 @@
 		<meta content="IE=9; IE=8; IE=7; IE=EDGE" http-equiv="X-UA-Compatible">
 		<title></title>
 		<style type="text/css">
-		                         /* Style Resets */
-		                             /* General */
-		                              body, #bodyTable { 
-		                                  height:100% !important; 
-		                                  width:100% !important; 
-		                                  margin:0; 
-		                                  padding:0; 
-		                              }
-		                              img { 
-		                                 border:0 none; 
-		                                  height:auto; 
-		                                  line-height:100%; 
-		                                  outline:none; 
-		                                  text-decoration:none; 
-		                              }
-		                              a img { 
-		                                 border:0 none;
-		                              }
-		                              .imageFix { 
-		                                 display:block; 
-		                              }
-		                              table, td {
-		                                 border-collapse:collapse; 
-		                              }
-		                             /* Hotmail */
-		                              .ReadMsgBody {
-		                                     width:100%;
-		                                 } 
-		                                 .ExternalClass {
-		                                     width:100%;
-		                                 } 
-		                                 .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {
-		                                     line-height:100%;
-		                                 } 
-		                             /* Outlook */
-		                                 table, td {
-		                                     mso-table-lspace:0pt; mso-table-rspace:0pt;
-		                                 } 
-		                                 img {
-		                                     -ms-interpolation-mode: bicubic;
-		                                 } 
-		                                 body, table, td, p, a, li, blockquote {
-		                                     -ms-text-size-adjust:100%; -webkit-text-size-adjust:100%;
-		                                 }               
-		                             /* Ourlook.com */
-		                                 .ExternalClass {
-		                                     width: 100%;
-		                                 }
-		                                 a, a:link, a:visited {
-		                                     text-decoration: none; color: #00788a;
-		                                 } 
-		                                 a:hover {
-		                                     text-decoration: underline;
-		                                 }
-		                                 h2,h2 a,h2 a:visited,h3,h3 a,h3 a:visited,h4,h5,h6,.t_cht {
-		                                     color:#000 !important;
-		                                 }
+		                                     /* Style Resets */
+		                                         /* General */
+		                                          body, #bodyTable { 
+		                                              height:100% !important; 
+		                                              width:100% !important; 
+		                                              margin:0; 
+		                                              padding:0; 
+		                                          }
+		                                          img { 
+		                                             border:0 none; 
+		                                              height:auto; 
+		                                              line-height:100%; 
+		                                              outline:none; 
+		                                              text-decoration:none; 
+		                                          }
+		                                          a img { 
+		                                             border:0 none;
+		                                          }
+		                                          .imageFix { 
+		                                             display:block; 
+		                                          }
+		                                          table, td {
+		                                             border-collapse:collapse; 
+		                                          }
+		                                         /* Hotmail */
+		                                          .ReadMsgBody {
+		                                                 width:100%;
+		                                             } 
+		                                             .ExternalClass {
+		                                                 width:100%;
+		                                             } 
+		                                             .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {
+		                                                 line-height:100%;
+		                                             } 
+		                                         /* Outlook */
+		                                             table, td {
+		                                                 mso-table-lspace:0pt; mso-table-rspace:0pt;
+		                                             } 
+		                                             img {
+		                                                 -ms-interpolation-mode: bicubic;
+		                                             } 
+		                                             body, table, td, p, a, li, blockquote {
+		                                                 -ms-text-size-adjust:100%; -webkit-text-size-adjust:100%;
+		                                             }               
+		                                         /* Ourlook.com */
+		                                             .ExternalClass {
+		                                                 width: 100%;
+		                                             }
+		                                             a, a:link, a:visited {
+		                                                 text-decoration: none; color: #00788a;
+		                                             } 
+		                                             a:hover {
+		                                                 text-decoration: underline;
+		                                             }
+		                                             h2,h2 a,h2 a:visited,h3,h3 a,h3 a:visited,h4,h5,h6,.t_cht {
+		                                                 color:#000 !important;
+		                                             }
+		                                               
+		                                               h2{
+		                                               color:#0066CC !important;
+		                                               }
+		                                             .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td {
+		                                                 line-height: 100%;
+		                                             } 
+                                                    table {
+	                                               border-collapse:separate;
+		                                           /* OSX and iOS */
+		                                               body{
+		                                                   -webkit-text-size-adjust:100%;
+		                                               }
+		                                           /* Windows Mobile */
+		                                           body{
+		                                                   -ms-text-size-adjust:100%;
+		                                           }
 		                                   
-		                                   h2{
-		                                   color:#0066CC !important;
-		                                   }
-		                                 .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td {
-		                                     line-height: 100%;
-		                                 } 
-		                               /* OSX and iOS */
-		                                   body{
-		                                       -webkit-text-size-adjust:100%;
-		                                   }
-		                               /* Windows Mobile */
-		                               body{
-		                                       -ms-text-size-adjust:100%;
-		                               }
-		               
-		                         /* End Resets */         
-		                         /* Media Queries */
-                                 /* Styles */
-                                 
-		</style>
-        <!--[if mso]>
+		                                     /* Media Queries */
+                                            @media only screen and (max-width: 610px) {
+                                                .bottomPadding {
+                                                      padding-bottom: 20px !important;
+                                                  }
+                                                  .center {
+                                                      text-align: center !important;
+                                                  }
+                                                  /* Column is half of the heart of the responsive schema. It puts tables into display:block so they will stack. */
+                                                  .column {
+                                                      display: block !important;
+                                                      float: none !important;
+                                                      width: 100% !important;
+                                                  }
+                                                                                    .removeElement {
+                                                      display: none !important;
+                                                  }
+                                                  /* Wrapper is the other half half of the heart. When the media query kicks in, it stretches its element across the screen. It also adds a consistent and smaller amount of padding to all elements for mobile viewing. */
+                                                  .wrapper {
+                                                      width:100% !important; 
+                                                      height:auto !important;
+                                                      padding-top: 20px !important;
+                                                  }
+
+                                              }
+                      /* Sets a specific and smaller padding value for mobile display */
+		                                     /* Styles */
+		                                     
+		</style><!--[if mso]>
                                     <style type=”text/css”>
                                     .fallback-text {
                                         font-family: Arial, sans-serif;
@@ -94,171 +119,283 @@
                                 <![endif]-->
 	</head>
 	<body style="padding:0; margin:0">
-        <table border="0" cellpadding="0" cellspacing="0" id="bodyTable" style="margin:0; padding:0;" width="100%">
-            <tr>
-                <td>
-                    <table width="845" style="margin:auto;">
-            <tr> <!-- Title -->
-                <td style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;" width="50"><img height="1" src="https://spacergif.org/spacer.gif"  width="50"></td>
-                <td align="center" class="wrapper" valign="top" colspan="2" style="background-color:#FAFAFA;">
-                    <h1>Headline 1</h1>
-                </td>
-                <td style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;" width="50"><img height="1" src="https://spacergif.org/spacer.gif"  width="50"></td>
-            </tr>
-            <tr> <!-- Hero Cat with Text -->
-                <td style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;" width="50"><img height="1" src="https://spacergif.org/spacer.gif"  width="50"></td>
-                <td colspan="2" style="background-color:#FAFAFA;">
-                    <table>
+		<table border="0" cellpadding="0" cellspacing="0" id="bodyTable" style="margin:0; padding:0;" width="100%">
+			<tr>
+				<td align="center" class="wrapper" valign="top">
+					<table style="margin:auto; border:0 none; max-width: 845px;">
+                        <!-- Grey Background Section -->
                         <tr>
                             <td>
-                                <font>Cats Are Great</font>
-                                <font>Going to catch the red dot today going to catch the red dot today where is my slave? I'm getting hungry find box a little too small and curl up with fur</font>
-                                </td>
-                                <td><img><!-- Cat Face on Desktop -->
-                            </td>
-                        </tr>
-                        <tr><td  colspan="2"><img><!-- Cat Body on Desktop --></td>
-                        </tr>
-                        <tr><td  colspan="2"><img><!-- Cat on Mobile --></td>
-                        </tr>            
-                    </table>
-                </td>
-                <td style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;" width="50"><img height="1" src="https://spacergif.org/spacer.gif"  width="50"></td>
-            </tr>
-            <tr> <!-- Feature Cards -->
-                <td style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;" width="50"><img height="1" src="https://spacergif.org/spacer.gif"  width="50"></td>
-                <td style="background-color:#FAFAFA;">
-                    <table>
-                        <tr>
-                            <td>
-                                <font>Feature One</font>
-                                <font>Sleep on keyboard then cats take over the world bite off human's toes lick human with sandpaper tongue ooh, are those your $250 dollar sandals? blep for tickle my belly</font>
-                            </td>
-                            <td>
-                                <font>Feature Two</font>
-                                <font>Lemme use that as my litter box yet floof tum, tickle bum, jellybean footies curly toes. Toy mouse squeak roll over</font>
-                            </td>
-                        </tr>
-                    </table>
-                <td style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;" width="50"><img height="1" src="https://spacergif.org/spacer.gif"  width="50"></td>
-            </tr>
-            <tr> <!-- Headline 2 -->
-                <td>
-                    <table>
-                        <tr>
-                            <td><font>Headline 2 With More Words</font>
-                            </td>
-                        </tr>
-                        <tr><!--Duplicate this when finished -->
-                            <td><!--Duplicate this when finished -->
                                 <table>
-                                    <tr>
-                                        <td><img>
+
+                        <!-- Title -->
+						<tr>
+							<td style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;" width="50">
+								<img height="1" src="https://spacergif.org/spacer.gif" width="50">
+							</td>
+							<td align="center" class="wrapper" style="background-color:#FAFAFA; font-family: 'Myriad Pro lite', MyriadPro, 'Myriad Pro', Helvetica, Arial, sans-serif; font-size: 22px; font-weight:300; table-layout: fixed;" valign="top" width="745">
+								<h1>
+									Headline 1
+								</h1>
+							</td>
+							<td style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;" width="50">
+								<img height="1" src="https://spacergif.org/spacer.gif" width="50">
+							</td>
+						</tr>
+                        <!-- Hero Cat with Text -->
+						<tr>
+							<td style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;" width="50">
+								<img height="1" src="https://spacergif.org/spacer.gif" width="50">
+							</td>
+							<td class="column" style="background-color:#FAFAFA;" width="745">
+								<table>
+									<tr>
+										<td>
+                                            <table>
+                                                <tr>
+                                                    <td style="font-family: 'Myriad Pro lite', MyriadPro, 'Myriad Pro', Helvetica, Arial, sans-serif; font-size: 22px; font-weight:300; table-layout: fixed;">Cats Are Great</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="font-family:‘Lucida Sans’, ‘Lucida Grande’, Verdana, sans-serif; font-size: 14px;vertical-align: top;">Going to catch the red dot today going to catch the red dot today where is my slave? I'm getting hungry find box a little too small and curl up with fur</td>
+                                                </tr>
+                                            </table>
+										</td>
+										<td>
+											<img><!-- Cat Face on Desktop -->
+										</td>
+									</tr>
+									<tr>
+										<td colspan="2">
+											<img><!-- Cat Body on Desktop -->
+										</td>
+									</tr>
+									<tr>
+										<td colspan="2">
+											<img><!-- Cat on Mobile -->
+										</td>
+									</tr>
+								</table>
+							</td>
+							<td style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;" width="50">
+								<img height="1" src="https://spacergif.org/spacer.gif" width="50">
+							</td>
+						</tr>
+                        <!-- Feature Cards -->
+						<tr>
+							<td style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;" width="50">
+								<img height="1" src="https://spacergif.org/spacer.gif" width="50">
+							</td>
+							<td style="background-color:#FAFAFA;" width="745">
+								<table>
+									<tr>
+										<td width="745" style="max-width: 347px; height: 100%; padding:0; max-height: 689px; max-width: 322px; margin:25px; text-align: center;">
+                                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                <tr>
+                                                    <td style="font-family: 'Myriad Pro lite', MyriadPro, 'Myriad Pro', Helvetica, Arial, sans-serif; font-size: 22px; font-weight:300; table-layout: fixed;">Feature One
+                                                    </td>
+												</tr>
+												<tr>
+                                                    <td style="font-family:‘Lucida Sans’, ‘Lucida Grande’, Verdana, sans-serif; font-size: 14px; vertical-align: top;">Sleep on keyboard then cats take over the world bite off human's toes lick human with sandpaper tongue ooh, are those your $250 dollar sandals? blep for tickle my belly</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="vertical-align: bottom;"><img style="margin-top:35px; margin-left:5px; margin-right:5px;" width="267" height="743" src="https://i.imgur.com/hO4Qb9b.png"></td>
+                                                </tr>
+                                            </table>
                                         </td>
-                                        <td><font>Subhead 1</font>
-                                        </td>
-                                    </tr>
-                                    <tr>
+										<td width="347" height="100%" style="height: 100%; padding:0; max-height: 689px; max-width: 322px;" class="column">
+                                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                <tr>
+                                                    <td style="font-family: 'Myriad Pro lite', MyriadPro, 'Myriad Pro', Helvetica, Arial, sans-serif; font-size: 22px; font-weight:300; vertical-align: top;">Feature Two
+                                                    </td>
+												</tr>
+												<tr>
+                                                    <td style="font-family:‘Lucida Sans’, ‘Lucida Grande’, Verdana, sans-serif; font-size: 14px;vertical-align: top;">Lemme use that as my litter box yet floof tum, tickle bum, jellybean footies curly toes. Toy mouse squeak roll over<br>&nbsp;<br></td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="vertical-align: bottom;"><img style="margin-top:35px; margin-left:5px; margin-right:5px;" width="267" height="743" src="https://i.imgur.com/hO4Qb9b.png"></td>
+                                                </tr>
+                                            </table>
+								        </td>
+									</tr>
+								</table>
+							</td>
+							<td style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;" width="50">
+								<img height="1" src="https://spacergif.org/spacer.gif" width="50">
+							</td>
+						</tr>
+                        </table></td></tr>    
+                        <!-- Headline 2 -->
+						<tr>
+							<td width="100%" colspan="3">
+								<table>
+									<tr>
+										<td>
+											<font>Headline 2 With More Words</font>
+										</td>
+									</tr>
+									<tr>
+										<!--Duplicate this when finished -->
+										<td>
+											<table>
+												<tr>
+                                                    <td>
+                                                        <table>
+                                                            <tr>
+                                                                <td height="39" width="38">
+                                                                    <img width="38" height="39" src="https://i.imgur.com/yMlfXUh.png"></td>
+                                                                <td style="font-family: 'Myriad Pro lite', MyriadPro, 'Myriad Pro', Helvetica, Arial, sans-serif; font-size: 18px;">Subhead 1
+                                                                </td>
+												            </tr>
+												            <tr>
+                                                                <td style="font-family:‘Lucida Sans’, ‘Lucida Grande’, Verdana, sans-serif; font-size:14px;" colspan="2">
+														      I will pester for food when you're in the kitchen even if it's salad . Leave dead animals as gifts eat a plant
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+												</tr>
+											</table>
+										</td>
                                         <td>
-                                            <font>I will pester for food when you're in the kitchen even if it's salad . Leave dead animals as gifts eat a plant</font>
-                                        </td>
-                                    </tr>
-                                </table>
-                            </td>
-                            <!-- Subhead 2 Kill a hand yet purr but Gate keepers of hell lie on your belly and purr when you are asleep
+											<table>
+												<tr>
+                                                    <td>
+                                                        <table>
+                                                            <tr>
+                                                                <td height="39" width="38">
+                                                                    <img width="38" height="39" src="https://i.imgur.com/yMlfXUh.png"></td>
+                                                                <td style="font-family: 'Myriad Pro lite', MyriadPro, 'Myriad Pro', Helvetica, Arial, sans-serif; font-size: 18px;">Subhead 2
+                                                                </td>
+												            </tr>
+												            <tr>
+                                                                <td style="font-family:‘Lucida Sans’, ‘Lucida Grande’, Verdana, sans-serif; font-size:14px;" colspan="2">
+														      Kill a hand yet purr but Gate keepers of hell lie on your belly and purr when you are asleep
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+												</tr>
+											</table>
+										</td><!-- 
                 
                 Subhead 3 Or i show my fluffy belly but it's a trap! if you pet it i will tear up your hand. Sit and stare the fat cat sat on the mat
                 
                 Subhead 4 Bat away with paws. Destroy couch chase imaginary bugs, run around the house at 4 in the morning peer out window, chatter at birds, lure them to mouth for munch, munch -->
+									</tr>
+                                    <tr>
+										<!--Duplicate this when finished -->
+										<td>
+											<table>
+												<tr>
+                                                    <td>
+                                                        <table>
+                                                            <tr>
+                                                                <td height="39" width="38">
+                                                                    <img width="38" height="39" src="https://i.imgur.com/yMlfXUh.png"></td>
+                                                                <td style="font-family: 'Myriad Pro lite', MyriadPro, 'Myriad Pro', Helvetica, Arial, sans-serif; font-size: 18px;">Subhead 3
+                                                                </td>
+												            </tr>
+												            <tr>
+                                                                <td style="font-family:‘Lucida Sans’, ‘Lucida Grande’, Verdana, sans-serif; font-size:14px;" colspan="2">
+														      Or i show my fluffy belly but it's a trap! if you pet it i will tear up your hand. Sit and stare the fat cat sat on the mat
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+												</tr>
+											</table>
+										</td>
+                                        <td>
+											<table>
+												<tr>
+                                                    <td>
+                                                        <table>
+                                                            <tr>
+                                                                <td height="39" width="38">
+                                                                    <img width="38" height="39" src="https://i.imgur.com/yMlfXUh.png"></td>
+                                                                <td style="font-family: 'Myriad Pro lite', MyriadPro, 'Myriad Pro', Helvetica, Arial, sans-serif; font-size: 18px;">Subhead 4
+                                                                </td>
+												            </tr>
+												            <tr>
+                                                                <td style="font-family:‘Lucida Sans’, ‘Lucida Grande’, Verdana, sans-serif; font-size:14px;" colspan="2">
+														      Subhead 4 Bat away with paws. Destroy couch chase imaginary bugs, run around the house at 4 in the morning peer out window, chatter at birds, lure them to mouth for munch, munch
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+                        <!-- Cat Collection CTA -->
+						<tr>
+							<td colspan="3" width="100%">
+								<table>
+									<tr>
+										<td>
+											<img><!--Cute Cat Face -->
+										</td>
+									</tr>
+									<tr>
+										<td style="font-family:‘Lucida Sans’, ‘Lucida Grande’, Verdana, sans-serif;"> 
+											Check out a list of our must-have cat apps.<br>&nbsp;<br><a>View the Cat collection &gt;</a> <a>View the SPECIAL MOBILE ONLY Cat collection &gt;</a>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+                        <!-- Headline 3 -->
+						<tr>
+							<td width="100%">
+								<table style="margin-left:30px; margin-right:30px; text-align: center; vertical-align: top">
+									<tr>
+										<td style="font-family: 'Myriad Pro lite', MyriadPro, 'Myriad Pro', Helvetica, Arial, sans-serif; font-size: 22px; font-weight:300;" colspan="3">
+											<font>Headline 3</font>
+										</td>
+									</tr>
+									<tr>
+										<td style="font-family:‘Lucida Sans’, ‘Lucida Grande’, Verdana, sans-serif; width:200px; margin: 30px; vertical-align: top"> 
+                                            <img style="display:block;"> <h2 style="font-family: 'Myriad Pro lite', MyriadPro, 'Myriad Pro', Helvetica, Arial, sans-serif; font-size: 22px; font-weight:300; table-layout: fixed;">Title 1</h2><br>Chomp, chomp but caticus cuteicus yet mice. Litter kitter kitty litty little kitten big roar roar feed me chirp at birds but show belly<br>&nbsp;<br><a>View the guide &gt;</a><br>&nbsp;<br><a>Download in iCat &gt;</a>
+										</td>
+                                        <td style="font-family:‘Lucida Sans’, ‘Lucida Grande’, Verdana, sans-serif; width:200px; margin: 30px; vertical-align: top"> 
+                                            <img style="display:block;"> <h2 style="font-family: 'Myriad Pro lite', MyriadPro, 'Myriad Pro', Helvetica, Arial, sans-serif; font-size: 22px; font-weight:300; table-layout: fixed;">Title 2</h2><br>Or i'm bored inside, let me out i'm lonely outside, let me in i can't make up my mind whether to go.<br>&nbsp;<br><a>Find more info &gt;</a>
+										</td>
+                                        <td style="font-family:‘Lucida Sans’, ‘Lucida Grande’, Verdana, sans-serif; width:200px; margin: 30px; vertical-align: top"> 
+                                            <img style="display:block;"> <h2 style="font-family: 'Myriad Pro lite', MyriadPro, 'Myriad Pro', Helvetica, Arial, sans-serif; font-size: 22px; font-weight:300; table-layout: fixed;">Title 3</h2><br>You nudge me with your foot?!?! leap into the air in greatest offense! Or follow us on Twitter <a>@CatSupport</a><br>&nbsp;<br><a>View the guide &gt;</a>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+                        <!-- Footer -->
+                        <tr>
+                            <td width="100%">
+                                <table style="margin:auto; background-color:#f2f2f2;" width="845">
+                                    <tr>
+                                        <td style="font-family:‘Lucida Sans’, ‘Lucida Grande’, Verdana, sans-serif;"> 
+                                            <a>Link 1</a> <a>Link 2</a> <a>1-800-MY-CATSS</a> <a>Link 3</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <!-- Hide on desktop -->
+                                        <td style="font-family:‘Lucida Sans’, ‘Lucida Grande’, Verdana, sans-serif;"> 
+                                            <a>Link 3</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="font-family:‘Lucida Sans’, ‘Lucida Grande’, Verdana, sans-serif;"> 
+                                            Some features may not be available for all countries or all areas. Click here to see complete list. TM and c 2016 Company inc. 123 Main Street, San Francisco, CA 94109 All Rights Reserved Pricacy Policy my Cat ID If you prefer not to receive commercial email from us, or if you've changed your email address, please click here.
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
                         </tr>
                     </table>
                 </td>
             </tr>
-            <tr> <!-- Cat Collection CTA -->
-                <td colspan="2">
-                    <table>
-                        <tr>
-                            <td><img><!--Cute Cat Face -->
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <font>Check out a list of our must-have cat apps.
-                                </font>
-                                <a>View the Cat collection ></a>
-                                <a>View the SPECIAL MOBILE ONLY Cat collection ></a>                               
-                            </td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-            <tr> <!-- Headline 3 -->
-                <td>
-                    <table>
-                        <tr>
-                            <td>
-                                <font>Headline 3</font>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <img>
-                                <font>Title 1
-                Chomp, chomp but caticus cuteicus yet mice. Litter kitter kitty litty little kitten big roar roar feed me chirp at birds but show belly
-                
-                
-                                </font>
-                                <a>View the guide ></a>
-                                <a>Download in iCat ></a>
-                            </td>
-                            <td>
-                                <img>
-                                <font>Title 2
-                                    Or i'm bored inside, let me out i'm lonely outside, let me in i can't make up my mind whether to go
-                                </font>
-                                <a>Find more info ></a>
-                            </td>
-                            <td>
-                                <img>
-                                <font> Title 3
-                                    You nudge me with your foot?!?! leap into the air in greatest offense! Or follow us on Twitter <a>@CatSupport</a>.
-                                </font>
-                                <a>Visit Cat Support ></a>
-                            </td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-            </table>
-                </td>
-            </tr>
-            <tr> <!-- Footer -->
-                <td>
-                    <table background-color="#f2f2f2" width="845" style="margin:auto;">
-                        <tr>
-                            <td>
-                                <a>Link 1</a>
-                                <a>Link 2</a>
-                                <a>1-800-MY-CATSS</a>
-                                <a>Link 3</a>
-                            </td>
-                        </tr>
-                        <tr> <!-- Hide on desktop -->
-                            <td>
-                                <a>Link 3</a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                    <font>Some features may not be available for all countries or all areas. Click here to see complete list.
-                                    TM and c 2016 Company inc. 123 Main Street, San Francisco, CA 94109
-                                    All Rights Reserved 
-                                    Pricacy Policy
-                                    my Cat ID
-                                    If you prefer not to receive commercial email from us, or if you've changed your email address, please click here.</font>
-                            </td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-</table>
+        </table>
+	</body>
+</html>
